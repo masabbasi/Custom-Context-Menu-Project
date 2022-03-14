@@ -2,15 +2,10 @@ let mainDiv = document.getElementById('main');
 
 function showMenu (event){
     event.preventDefault();
-    // if (mainDiv.style.display === 'none') {
-        mainDiv.style.left=event.pageX+'px';
-        mainDiv.style.top=event.pageY+'px';
-        mainDiv.style.display='block';
-        console.log(event)
-//     } else {
-//         mainDiv.style.left=event.pageX+'px';
-//         mainDiv.style.top=event.pageY+'px';
-//     }
+    mainDiv.style.left=event.pageX+'px';
+    mainDiv.style.top=event.pageY+'px';
+    mainDiv.style.display='block';
+    console.log(event)
 }
 
 function clickHideMenu (){
